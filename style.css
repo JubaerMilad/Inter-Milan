@@ -1,0 +1,162 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap');
+
+/* ---------
+   Utilities
+   --------- */
+body{
+    margin: 0%;
+    font-family: 'Poppins', sans-serif;}
+/* ----------
+First section
+-------------  */
+.first-section{
+    height: 677px;
+    width: 100%;
+    background-color: aqua;
+    display: flex;}
+.banner img{
+    width: 50%;
+    margin-left: 35%;
+    margin-top: 153px;
+    margin-right: 140px;
+    margin-bottom: 86px;}
+.text{
+    margin-left: 156px;
+    margin-top: 207px;
+    margin-bottom: 240px;
+    font-size: 3em;
+    line-height: 15px;
+    color:black ;}
+/*---------
+      Team
+----------- */
+.team{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    justify-items: center;
+    margin-top: 20px;}
+    
+.team img{
+    width: 100%;
+    }
+.player{
+    text-align: center;}
+.player{
+    width: 330px;
+    height: 474px;
+    margin-bottom: 10px;
+    margin-left: 22px;
+    margin-top: 20px;
+    padding: 15px;
+    box-shadow: 10px 10px 40px grey;
+    text-align: center;}
+/*-----------
+Last Section 
+-------------*/
+.last-section{
+     display: flex;
+     margin-top: 30px;
+     margin-bottom: 100px;}
+.last-text{
+    margin-left: 182px;
+    margin-top: 100px;}
+button{
+    width: 168px;
+    height: 44px;
+    padding: 10px, 24px, 10px, 24px;
+    background-color:#E02C6D;
+    color: white;}
+.last-img img{
+    width: 500px;
+    margin-top: 50px;
+    margin-right: 110px;}
+/* ----------
+     Button
+--------------  */
+.fa-arrow-right{
+    font-size: 15px;
+    color: white;
+    margin-left: 9px;}
+/*-----------
+    Table
+    ---------  */
+.next-match{
+        margin-bottom: 100px;
+    }
+.next-match h2 {
+    text-align: center;
+    color: blueviolet;}
+table {
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+    width: 100%;}
+td, th {
+    border: 1px solid #dddddd;
+    text-align: left;
+    padding: 8px;}
+tr:nth-child(even) {
+    background-color: #dddddd;}
+  /* ------------
+          Form 
+   -------------*/
+form {
+    border: 3px solid #f1f1f1;
+    font-family: Arial;}
+.newsletter h2{
+    text-align: center;
+    color: blueviolet;}
+.container {
+    padding: 20px;
+    background-color: #f1f1f1;}
+input[type=text], input[type=submit] {
+    width: 100%;
+    padding: 12px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;}
+input[type=checkbox] {
+    margin-top: 16px;}
+input[type=submit] {
+    background-color: aqua;
+    color: white;
+    border: none;}
+input[type=submit]:hover {
+    opacity: 0.8;}
+.hover-item :hover{
+    font-size: 2em;
+    color: blue ;}
+  /* Footer */
+.logo{
+    text-align: center;}
+.logo img{
+    width: 30px;}
+.small-logo{
+     display: block;
+     margin-left: auto;
+     margin-right: auto;
+     width: 30%;}
+/* ----------
+   Media query
+   ----------- */
+/* Mobile Creen */
+@media only screen and (max-width: 688px) {
+.first-section{
+    flex-direction: column;
+    width: 100%;
+    height: 100%;}
+.banner img{
+    width:150px;}
+
+.team{
+    grid-template-columns: repeat(1, 1fr);}
+.last-section{
+    width: 100%;
+    flex-direction: column;}
+.last-text{
+    width: 50%;}
+.last-img img{
+    width: 300px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;}
